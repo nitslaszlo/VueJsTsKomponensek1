@@ -1,29 +1,39 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div id="app" class="container">
+    <!-- oldalcím -->
+    <h1>Komponensek</h1>
+
+    <!-- inputok -->
+    <div class="mb-3">
+      <input type="text" class="form-control" v-model="theme">
+      <input type="number" v-model="offset">
+    </div>
+    <!-- gombok -->
+    <div>
+       <counter-button v-bind:theme="theme" v-bind:offset="offset"></counter-button>
+       <counter-button v-bind:theme="theme" v-bind:offset="offset"></counter-button>
+       <counter-button v-bind:theme="theme" v-bind:offset="offset"></counter-button>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "./components/HelloWorld.vue";
+import CounterButton from "./components/CounterButton.vue";
 
 @Component({
   components: {
-    HelloWorld
+    CounterButton
   }
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  private theme: string = "success";
+  private offset: number = 0;
+}
 </script>
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>
