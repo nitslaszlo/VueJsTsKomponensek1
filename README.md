@@ -1,6 +1,7 @@
 # vuejs-ts-komponensek1
-
-## Project setup
+Forrás: Dósa Bálint: https://github.com/dosabalint/webfejleszto-vue-01-03<br>
+Fejlesztői környezet beállítása: https://github.com/nitslaszlo/JedlikVueJsStarter
+## Fejlesztői környezet beállítása 2
 - npm install jquery --save
 - npm install @types/jquery --save-dev
 - npm install bootstrap --save
