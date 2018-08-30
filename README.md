@@ -11,15 +11,15 @@ Fejlesztői környezet beállítása: https://github.com/nitslaszlo/JedlikVueJsS
 - npm install bootstrap-vue --save
 - main.ts kiegészítése:
     > import Vue from "vue";<br>
-    > import BootstrapVue from "bootstrap-vue";<br>
+    > **import BootstrapVue from "bootstrap-vue";**<br>
     > import App from "./App.vue";<br>
     > <br>
     > Vue.config.productionTip = false;<br>
     > <br>
-    > import "bootstrap/dist/css/bootstrap.css";<br>
-    > import "bootstrap-vue/dist/bootstrap-vue.css";<br>
+    > **import "bootstrap/dist/css/bootstrap.css";**<br>
+    > **import "bootstrap-vue/dist/bootstrap-vue.css";**<br>
     > <br>
-    > Vue.use(BootstrapVue);<br>
+    > **Vue.use(BootstrapVue);**<br>
     > <br>
     > new Vue({<br>
     >     render: h => h(App)<br>
